@@ -34,7 +34,7 @@ async function run() {
       const page = parseInt(req.query.page);
       const size = parseInt(req.query.size);
 
-      console.log('pagination query', page, size);
+      // console.log('pagination query', page, size);
       // console.log('pagination query', req.query);
       const result = await productCollection.find()
         .skip(page * size)
